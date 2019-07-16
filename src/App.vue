@@ -1,0 +1,33 @@
+<template>
+	<div id="app">
+		<app-header></app-header>
+		<router-view></router-view>
+	</div>
+</template>
+
+<script>
+	import Header from '@/components/Header/Header.vue';
+
+	export default {
+		components: {
+			appHeader: Header
+		}
+	};
+</script>
+
+
+<style lang="scss">
+
+	body {
+		background-color: #181818;
+	}
+
+	#app {
+		font-family: "Avenir", Helvetica, Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-align: center;
+		color: #c5c5c5;
+	}
+	
+</style>
