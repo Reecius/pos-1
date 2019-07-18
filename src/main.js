@@ -6,7 +6,11 @@ import App from './App.vue'
 import router from './router'
 import store from './store/store'
 
+import VueDragscroll from 'vue-dragscroll';
+
 Vue.config.productionTip = false
+
+Vue.use(VueDragscroll);
 
 new Vue({
   router,

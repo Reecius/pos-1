@@ -79,10 +79,8 @@
 	}
 
 	.btn {
-		// color: #7fd200;
-		color: red;
-		// border: 1px solid #7fd200;
-		border: 1px solid red;
+		color: #7fd200;
+		border: 1px solid #7fd200;
 		width: 90px;
 		height: 100px;
 		font-size: 3em;

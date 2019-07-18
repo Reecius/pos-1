@@ -19,9 +19,6 @@
 		},
 		methods: {
 			loginClick() {
-				console.log("loginClicked");
-				// this.$store.commit('authenticate', true);
-				// this.$store.dispatch("actionAuth", true);
 				this.loginClicked = true;
 			},
 			closeClicked() {
@@ -45,8 +42,7 @@
 		border-radius: 20px;
 		color: #c5c5c5;
 		background-color: #272727;
-		// border: 2px solid #7fd200;
-		border: 2px solid red;
+		border: 2px solid #7fd200;
 
 		&:focus {
 			outline: none;
