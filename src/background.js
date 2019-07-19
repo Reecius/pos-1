@@ -1,6 +1,12 @@
 'use strict'
 
-import { app, protocol, BrowserWindow } from 'electron'
+// import { app, protocol, BrowserWindow } from 'electron'
+import electron from 'electron';
+
+const app = electron.app;
+const protocol = electron.protocol;
+const BrowserWindow = electron.BrowserWindow;
+
 import {
   createProtocol,
   installVueDevtools
@@ -16,7 +22,10 @@ protocol.registerSchemesAsPrivileged([{scheme: 'app', privileges: { secure: true
 
 function createWindow () {
   // Create the browser window.
-  win = new BrowserWindow({ width: 1920, height: 1080, webPreferences: {
+//   win = new BrowserWindow({ width: 1920, height: 1080, webPreferences: {
+//   win = new BrowserWindow({ width: 1280, height: 1024, webPreferences: {
+//   win = new BrowserWindow({ width: 1280, height: 720, webPreferences: {
+  win = new BrowserWindow({ width: 1024, height: 768, webPreferences: {
     nodeIntegration: true
   } })
 
